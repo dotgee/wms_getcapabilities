@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = WmsGetcapabilities::VERSION
   s.authors     = ["Jerome Chapron"]
   s.email       = ["jchapron@dotgee.fr"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/imperYaL/wms_getcapabilities"
+  s.summary     = "Interface between ruby and Geoserver WMS GetCapabilities"
+  s.description = "Interface between ruby and Geoserver WMS GetCapabilities"
 
   s.rubyforge_project = "wms_getcapabilities"
 
