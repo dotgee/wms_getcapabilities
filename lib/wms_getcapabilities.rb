@@ -3,10 +3,10 @@ require 'libxml'
 require 'open-uri'
 require 'ostruct'
 
-require "wms_getcapabilities/geoserver"
-require "wms_getcapabilities/parser"
-
 module WmsGetcapabilities
+
+  require "wms_getcapabilities/geoserver"
+  require "wms_getcapabilities/parser"
 
 
 end

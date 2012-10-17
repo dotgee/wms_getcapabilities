@@ -14,6 +14,14 @@ module WmsGetcapabilities
       @capabilities = Parser.new(response).capabilities
     end
 
+    def capabilities
+      @capabilities
+    end
+
+    def layers
+      @capabilities.nested_layers
+    end
+  
   end
 
 end

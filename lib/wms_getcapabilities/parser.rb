@@ -1,7 +1,11 @@
+require 'logger'
+$logger = Logger.new(STDOUT)
+$logger.level = Logger::WARN
+
 module WmsGetcapabilities
 
   class Parser
-    
+
     READERS_V1 = {
       'Service' => lambda { |node, obj|
                     puts node.name;
@@ -32,7 +36,7 @@ module WmsGetcapabilities
 
         bbox.res = res unless res.x.nil? || res.y.nil?
 
-        bbox
+        obj.bbox = bbox
       },
       'OnlineReource' => lambda { |node, obj|
         # obj.contact_information = OpenStruct.new
