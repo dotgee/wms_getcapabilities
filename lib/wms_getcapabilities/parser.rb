@@ -1,6 +1,7 @@
 module WmsGetcapabilities
 
   class Parser
+    
     READERS_V1 = {
       'Service' => lambda { |node, obj|
                     puts node.name;
